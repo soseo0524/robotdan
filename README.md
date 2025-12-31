@@ -97,7 +97,7 @@ JetCobot과 Pinky 2, 3의 작업 이력을 기록
   
   * Input_Case: 검수 대상의 비료 타입 (서버 데이터 연동).
   
-  * AI_Score: Autoencoder 모델이 계산한 Reconstruction Error 값.
+  * AI_Score: Autoencoder 모델이 계산한 Reconstruction Error 값
   
   * Final_Verdict: 최종 판정 (OK 또는 NG).
   
@@ -108,7 +108,10 @@ JetCobot과 Pinky 2, 3의 작업 이력을 기록
 
 
 ### 3. Robot_Status_Table (실시간 모니터링)
-전체 로봇의 상태를 관리하며, 특히 배터리 관리 
+전체 로봇의 상태를 관리하며, 특히 배터리 관리쪽 
+핑키의 걸음수를 기록해서이느 일정 수준을넘으면 충전소에 가도록 (이때 자율주행으로 충전소 찾아가기)
+-> 충전소는 총 2개
+1층에 1개 2층에 1개
 
 
 
