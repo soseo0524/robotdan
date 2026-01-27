@@ -21,7 +21,7 @@ app.add_middleware(
 
 # Database Configuration
 db_config = {
-    'host': 'localhost',
+    'host': '192.168.0.184',
     'user': 'lovoDB',
     'password': 'LovoDB1234!',
     'database': 'factory_system'
