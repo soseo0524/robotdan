@@ -69,7 +69,7 @@ class CommunicationManager:
         """API 서버에서 로봇 데이터 가져오기"""
         try:
             import requests
-            response = requests.get("http://localhost:5000/api/robots", timeout=2)
+            response = requests.get("http://192.168.0.7:5000/api/robots", timeout=2)
             if response.status_code == 200:
                 return response.json()
         except Exception as e:
@@ -80,7 +80,7 @@ class CommunicationManager:
         """API 서버에서 주문 데이터 가져오기"""
         try:
             import requests
-            response = requests.get("http://localhost:5000/api/orders", timeout=2)
+            response = requests.get("http://192.168.0.7:5000/api/orders", timeout=2)
             if response.status_code == 200:
                 return response.json()
         except Exception as e:
@@ -91,7 +91,7 @@ class CommunicationManager:
         """API 서버에서 자재 데이터 가져오기"""
         try:
             import requests
-            response = requests.get("http://localhost:5000/api/materials", timeout=2)
+            response = requests.get("http://192.168.0.7:5000/api/materials", timeout=2)
             if response.status_code == 200:
                 return response.json()
         except Exception as e:

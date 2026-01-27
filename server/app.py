@@ -175,7 +175,7 @@ async def ai_analysis(request: Request):
         
         # Call AI Server (Running on port 8000)
         async with httpx.AsyncClient() as client:
-            response = await client.post("http://localhost:8000/predict", json=data)
+            response = await client.post("http://192.168.0.184:8000/predict", json=data)
             
         if response.status_code != 200:
             raise HTTPException(status_code=response.status_code, detail="AI Server Error")

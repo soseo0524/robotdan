@@ -110,7 +110,7 @@ const furnitureData = {
 // API Functions
 // ============================================
 
-const API_BASE_URL = 'http://localhost:5000/api';
+const API_BASE_URL = 'http://192.168.0.7:5000/api';
 
 async function fetchMaterials() {
     try {
