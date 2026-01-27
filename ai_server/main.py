@@ -15,29 +15,19 @@ class VideoState:
     def __init__(self):
         self.latest_frame = None
         self.lock = threading.Lock()
-        self.robot_ip = "192.168.0.48"
-        self.udp_port = 9540
-        self.command_port = 9541
+        self.udp_ports = [9511, 9521, 9551] # Based on user request (상차, 하차, 청소)
+        self.command_port_offset = 1 # Not used much here but for consistency
 
 video_state = VideoState()
 
-def udp_receiver_task():
-    """Independent UDP Receiver on port 9540."""
+def udp_receiver_task(port):
+    """Independent UDP Receiver on specified port."""
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    # Note: On some systems SO_REUSEADDR allows multiple binds to same port, 
-    # but for independent IPs (different laptops), this isn't an issue.
-    sock.bind(("0.0.0.0", video_state.udp_port))
+    sock.bind(("0.0.0.0", port))
     sock.settimeout(2.0)
     
-    # Send START to robot
-    try:
-        cmd_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-        cmd_sock.sendto(b"START", (video_state.robot_ip, video_state.command_port))
-    except Exception as e:
-        print(f"Failed to send START: {e}")
-
-    print(f"AI Server listening independently on port {video_state.udp_port}...")
+    print(f"AI Server listening on port {port}...")
     
     while True:
         try:
@@ -52,13 +42,14 @@ def udp_receiver_task():
         except socket.timeout:
             continue 
         except Exception as e:
-            print(f"UDP Receiver Error: {e}")
+            print(f"UDP Receiver Error on port {port}: {e}")
 
 # Start the UDP thread on startup
 @app.on_event("startup")
 async def startup_event():
-    thread = threading.Thread(target=udp_receiver_task, daemon=True)
-    thread.start()
+    for port in video_state.udp_ports:
+        thread = threading.Thread(target=udp_receiver_task, args=(port,), daemon=True)
+        thread.start()
 
 def generate_video_stream():
     """Generator for MJPEG stream."""
