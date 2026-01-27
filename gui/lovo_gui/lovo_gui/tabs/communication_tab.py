@@ -76,16 +76,10 @@ class CommunicationTab(QWidget):
             
             # 모든 로봇에 CameraController 생성 (UDP 포트: 9510, 9520, 9530, 9540, 9550)
             camera_port = 9510 + (idx * 10)
-            
-            # Transport Robot 2 (idx 3)는 AI 서버를 통해 중계받음
-            if idx == 3:
-                camera_controller = HttpCameraController("http://localhost:8000/api/video/feed")
-                self.comm_manager.log(f"{robot_name} 카메라 컨트롤러 초기화 (AI Relay 모드)")
-            else:
-                camera_controller = CameraController(robot_ip, camera_port)
-                self.comm_manager.log(f"{robot_name} 카메라 컨트롤러 초기화 (UDP Port: {camera_port})")
-                
+            camera_controller = CameraController(robot_ip, camera_port)
             self.camera_controllers[robot_id] = camera_controller
+            
+            self.comm_manager.log(f"{robot_name} 카메라 컨트롤러 초기화 (UDP Port: {camera_port})")
     
     def _on_robot_connection_changed(self, robot_id, connected):
         """로봇 연결 상태 변경 시"""

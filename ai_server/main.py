@@ -15,37 +15,37 @@ class VideoState:
     def __init__(self):
         self.latest_frame = None
         self.lock = threading.Lock()
-        self.robot_ip = "192.168.0.48" # From user metadata
+        self.robot_ip = "192.168.0.48"
         self.udp_port = 9540
         self.command_port = 9541
 
 video_state = VideoState()
 
 def udp_receiver_task():
-    """Background task to receive UDP JPEG frames on port 9540."""
+    """Independent UDP Receiver on port 9540."""
     sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
+    # Note: On some systems SO_REUSEADDR allows multiple binds to same port, 
+    # but for independent IPs (different laptops), this isn't an issue.
     sock.bind(("0.0.0.0", video_state.udp_port))
     sock.settimeout(2.0)
     
-    # Send START command to robot (Matches GUI logic)
-    print(f"Sending START to {video_state.robot_ip}:{video_state.command_port}")
+    # Send START to robot
     try:
         cmd_sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         cmd_sock.sendto(b"START", (video_state.robot_ip, video_state.command_port))
     except Exception as e:
         print(f"Failed to send START: {e}")
 
-    print(f"UDP Video Receiver listening on port {video_state.udp_port}...")
+    print(f"AI Server listening independently on port {video_state.udp_port}...")
     
     while True:
         try:
             data, addr = sock.recvfrom(65507)
             
-            # Simple direct JPEG decoding (Matches GUI CameraController)
+            # Decode for AI Analysis
             nparr = np.frombuffer(data, np.uint8)
             frame = cv2.imdecode(nparr, cv2.IMREAD_COLOR)
-            
             if frame is not None:
                 with video_state.lock:
                     video_state.latest_frame = frame
