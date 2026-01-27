@@ -1,0 +1,2 @@
+[console_scripts]
+lovo_gui = lovo_gui.main_window:main

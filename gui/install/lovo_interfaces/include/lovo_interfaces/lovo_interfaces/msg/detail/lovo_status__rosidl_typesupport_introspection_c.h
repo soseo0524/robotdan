@@ -1,0 +1,1 @@
+/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/rosidl_typesupport_introspection_c/lovo_interfaces/msg/detail/lovo_status__rosidl_typesupport_introspection_c.h

@@ -1,0 +1,2 @@
+[console_scripts]
+main_server = lovo_main_server.main_server_node:main

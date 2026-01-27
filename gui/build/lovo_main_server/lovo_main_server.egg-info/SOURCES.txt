@@ -1,0 +1,14 @@
+package.xml
+setup.cfg
+setup.py
+lovo_main_server/__init__.py
+lovo_main_server/database_manager.py
+lovo_main_server/main_server_node.py
+lovo_main_server.egg-info/PKG-INFO
+lovo_main_server.egg-info/SOURCES.txt
+lovo_main_server.egg-info/dependency_links.txt
+lovo_main_server.egg-info/entry_points.txt
+lovo_main_server.egg-info/requires.txt
+lovo_main_server.egg-info/top_level.txt
+lovo_main_server.egg-info/zip-safe
+resource/lovo_main_server

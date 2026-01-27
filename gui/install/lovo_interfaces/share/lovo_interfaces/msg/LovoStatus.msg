@@ -1,0 +1,1 @@
+/home/addinedu/Desktop/teamproject/gui/lovo_interfaces/msg/LovoStatus.msg

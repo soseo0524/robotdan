@@ -1,0 +1,1 @@
+/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/ament_cmake_core/lovo_interfacesConfig.cmake

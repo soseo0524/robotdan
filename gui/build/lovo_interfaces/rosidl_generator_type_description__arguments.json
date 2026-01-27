@@ -1,0 +1,7 @@
+{
+  "package_name": "lovo_interfaces",
+  "output_dir": "/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/rosidl_generator_type_description/lovo_interfaces",
+  "idl_tuples": [
+    "/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/rosidl_adapter/lovo_interfaces:msg/LovoStatus.idl"
+  ]
+}

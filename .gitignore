@@ -1,0 +1,27 @@
+# Virtual Environments
+.venv/
+venv/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Logs
+*.log
+server.log
+ai_server.log
+
+# IDEs
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Large data or temporary files
+*.bak
+*.swp
+*.tmp

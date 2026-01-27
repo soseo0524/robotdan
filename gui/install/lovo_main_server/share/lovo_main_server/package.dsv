@@ -1,0 +1,9 @@
+source;share/lovo_main_server/hook/pythonpath.ps1
+source;share/lovo_main_server/hook/pythonpath.dsv
+source;share/lovo_main_server/hook/pythonpath.sh
+source;share/lovo_main_server/hook/ament_prefix_path.ps1
+source;share/lovo_main_server/hook/ament_prefix_path.dsv
+source;share/lovo_main_server/hook/ament_prefix_path.sh
+source;../../build/lovo_main_server/share/lovo_main_server/hook/pythonpath_develop.ps1
+source;../../build/lovo_main_server/share/lovo_main_server/hook/pythonpath_develop.dsv
+source;../../build/lovo_main_server/share/lovo_main_server/hook/pythonpath_develop.sh

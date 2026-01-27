@@ -1,0 +1,1 @@
+ament_cmake_symlink_install_targets("TARGET_FILES" "/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/rosidl_generator_py/lovo_interfaces/lovo_interfaces_s__rosidl_typesupport_c.so" "TARGETS" "lovo_interfaces_s__rosidl_typesupport_c" "DESTINATION" "lib/python3.12/site-packages/lovo_interfaces")

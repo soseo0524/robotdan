@@ -1,0 +1,242 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8c047c98403691cc9737.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "lovo_interfaces__py",
+					"jsonFile" : "directory-lovo_interfaces__py-283fb390431f5768498f.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/lovo_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "lovo_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_lovo_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_lovo_interfaces_egg-e77b83e5387ce223271b.json",
+					"name" : "ament_cmake_python_build_lovo_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_lovo_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_lovo_interfaces-18c18b16a7d5086a8f7e.json",
+					"name" : "ament_cmake_python_symlink_lovo_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces-1e66fe944c1612c9b82f.json",
+					"name" : "lovo_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__cpp-69bcd70c7829f8d087d5.json",
+					"name" : "lovo_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "lovo_interfaces__py::@b1cc56afbd27f15016a9",
+					"jsonFile" : "target-lovo_interfaces__py-79a2e2f177b7fd00bb44.json",
+					"name" : "lovo_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_generator_c-c7602fcee737e537e4e5.json",
+					"name" : "lovo_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_generator_py-764fa5852f3f3004fd21.json",
+					"name" : "lovo_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_generator_type_description::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_generator_type_description-7e0bc799332f3e05ab15.json",
+					"name" : "lovo_interfaces__rosidl_generator_type_description",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_typesupport_c-40227a731e272c23354a.json",
+					"name" : "lovo_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_typesupport_cpp-f66fdc51ddd4a689d507.json",
+					"name" : "lovo_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_typesupport_fastrtps_c-b49f2a1653a204ed5517.json",
+					"name" : "lovo_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_typesupport_fastrtps_cpp-d031bd9ce2a2d601c795.json",
+					"name" : "lovo_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_typesupport_introspection_c-0d4359176b23a3555de2.json",
+					"name" : "lovo_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces__rosidl_typesupport_introspection_cpp-25cf283ba26e371909c9.json",
+					"name" : "lovo_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces_s__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces_s__rosidl_typesupport_c-08daac1952e2ab57c3df.json",
+					"name" : "lovo_interfaces_s__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces_s__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces_s__rosidl_typesupport_fastrtps_c-4e94d39773b9095a80ec.json",
+					"name" : "lovo_interfaces_s__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces_s__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces_s__rosidl_typesupport_introspection_c-11872a867b330f16c588.json",
+					"name" : "lovo_interfaces_s__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "lovo_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-lovo_interfaces_uninstall-163a5cbbed75decb681b.json",
+					"name" : "lovo_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-7c0c26e763e9c8903ab5.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces",
+		"source" : "/home/addinedu/Desktop/teamproject/gui/lovo_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

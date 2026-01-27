@@ -1,0 +1,1 @@
+/home/addinedu/Desktop/teamproject/gui/build/lovo_interfaces/rosidl_generator_c/lovo_interfaces/msg/lovo_status.h
