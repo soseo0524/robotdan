@@ -3,9 +3,9 @@ import socket
 import numpy as np
 import time
 
-# Robot 2 Simulation
-SERVER_IP = "127.0.0.1" # Sending to local AI Server
-UDP_PORT = 9540         # AI Server listens here
+
+SERVER_IP = "192.168.0.184" 
+UDP_PORT = 9541   
 
 def main():
     # Create test image
